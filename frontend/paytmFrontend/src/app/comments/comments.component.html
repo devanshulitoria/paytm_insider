@@ -1,0 +1,14 @@
+<div>
+  
+    <hr>
+<h3>Here are the Top Comments</h3>
+<hr>
+<app-spinner *ngIf="showSpinner"></app-spinner>
+<ul *ngFor="let comment of comments">
+    <div class="mews" >
+    <h5>{{comment.username}}</h5>
+    <p>{{comment.content}}</p>
+    <p><small>Sub-Comments  on  this    story   are   {{comment.kids}} </small></p>
+    </div>   
+  </ul>
+</div>

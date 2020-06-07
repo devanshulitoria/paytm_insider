@@ -1,0 +1,13 @@
+<div>
+    <hr>
+<h3>Past Stories</h3>
+<hr>
+<ul *ngFor="let story of stories">
+    <div class="mews" >
+    <h5>{{story.title}}</h5>
+    <p>Story By <b>{{story.username}}</b></p>
+    <a href="{{story.url}}">Url to the Story  </a>
+    <a  (click)="onSelect(story)">|  Comments on this story</a>
+    </div>   
+  </ul>
+</div>
