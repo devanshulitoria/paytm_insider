@@ -15,9 +15,7 @@ router.get("/",async(req,res)=>{
     console.log("inside past stories");
     try {
         const story= await storyModal.find();
-        return res.status(200).json({
-            data:story
-        });
+        return res.send(JSON.stringify(story));
     } catch (error) {
       console.log("error from paststories.js-->"+error);
       res.status(500).json({

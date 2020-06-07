@@ -13,8 +13,8 @@ const redis_port=process.env.port || 6379;
 const client = redis.createClient(redis_port);
 const app = express();
 app.use(cors());
- app.listen(5000,()=>{
- console.log("server is started");
+ app.listen(port,()=>{
+ console.log("server is started on port "+port);
 
  });
 
