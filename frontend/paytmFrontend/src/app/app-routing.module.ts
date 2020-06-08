@@ -7,6 +7,7 @@ import { ErrorComponent } from './error/error.component';
 
 
 const routes: Routes = [
+  {path:'',component:TopStoriesComponent},
   {path:'topstories',component:TopStoriesComponent},
   {path:'paststories',component:PastStoriesComponent},
   {path:'comments/:id',component:CommentsComponent},

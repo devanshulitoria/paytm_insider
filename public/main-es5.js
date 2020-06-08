@@ -822,6 +822,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     "./src/app/error/error.component.ts");
 
     var routes = [{
+      path: '',
+      component: _top_stories_top_stories_component__WEBPACK_IMPORTED_MODULE_3__["TopStoriesComponent"]
+    }, {
       path: 'topstories',
       component: _top_stories_top_stories_component__WEBPACK_IMPORTED_MODULE_3__["TopStoriesComponent"]
     }, {
@@ -1245,7 +1248,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, GetCommentfromBackendService);
 
         this.http = http;
-        this._url = "http://localhost:5000/comments/";
+        this._url = "http://ec2-3-17-157-239.us-east-2.compute.amazonaws.com:5000/comments/";
       }
 
       _createClass(GetCommentfromBackendService, [{
@@ -1313,7 +1316,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, GetDataFromBackendService);
 
         this.http = http;
-        this._url = "http://localhost:5000/top-stories";
+        this._url = "http://ec2-3-17-157-239.us-east-2.compute.amazonaws.com:5000/top-stories";
       }
 
       _createClass(GetDataFromBackendService, [{
@@ -1381,7 +1384,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, GetPastStoriesService);
 
         this.http = http;
-        this._url = "http://localhost:5000/paststories";
+        this._url = "http://ec2-3-17-157-239.us-east-2.compute.amazonaws.com:5000/paststories";
       }
 
       _createClass(GetPastStoriesService, [{

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class GetCommentfromBackendService {
-  private _url:string="http://http://ec2-3-17-157-239.us-east-2.compute.amazonaws.com:5000/comments/";
+  private _url:string="http://ec2-3-17-157-239.us-east-2.compute.amazonaws.com:5000/comments/";
   constructor(private http:HttpClient) { }
   getData(ide): Observable<comments[]>{
     return this.http.get<comments[]>(this._url+ide);

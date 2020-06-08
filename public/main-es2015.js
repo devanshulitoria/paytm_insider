@@ -380,6 +380,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
+    { path: '', component: _top_stories_top_stories_component__WEBPACK_IMPORTED_MODULE_3__["TopStoriesComponent"] },
     { path: 'topstories', component: _top_stories_top_stories_component__WEBPACK_IMPORTED_MODULE_3__["TopStoriesComponent"] },
     { path: 'paststories', component: _past_stories_past_stories_component__WEBPACK_IMPORTED_MODULE_4__["PastStoriesComponent"] },
     { path: 'comments/:id', component: _comments_comments_component__WEBPACK_IMPORTED_MODULE_5__["CommentsComponent"] },
@@ -623,7 +624,7 @@ __webpack_require__.r(__webpack_exports__);
 let GetCommentfromBackendService = class GetCommentfromBackendService {
     constructor(http) {
         this.http = http;
-        this._url = "http://localhost:5000/comments/";
+        this._url = "http://ec2-3-17-157-239.us-east-2.compute.amazonaws.com:5000/comments/";
     }
     getData(ide) {
         return this.http.get(this._url + ide);
@@ -661,7 +662,7 @@ __webpack_require__.r(__webpack_exports__);
 let GetDataFromBackendService = class GetDataFromBackendService {
     constructor(http) {
         this.http = http;
-        this._url = "http://localhost:5000/top-stories";
+        this._url = "http://ec2-3-17-157-239.us-east-2.compute.amazonaws.com:5000/top-stories";
     }
     getData() {
         return this.http.get(this._url);
@@ -699,7 +700,7 @@ __webpack_require__.r(__webpack_exports__);
 let GetPastStoriesService = class GetPastStoriesService {
     constructor(http) {
         this.http = http;
-        this._url = "http://localhost:5000/paststories";
+        this._url = "http://ec2-3-17-157-239.us-east-2.compute.amazonaws.com:5000/paststories";
     }
     getData() {
         return this.http.get(this._url);
